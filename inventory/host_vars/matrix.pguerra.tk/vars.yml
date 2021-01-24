@@ -18,7 +18,7 @@ matrix_domain: 'pguerra.tk'
 # you won't be required to define this variable (see `docs/configuring-playbook-ssl-certificates.md`).
 #
 # Example value: someone@example.com
-matrix_ssl_lets_encrypt_support_email: ''
+matrix_ssl_lets_encrypt_support_email: 'guerra.pt@hotmail.com'
 
 # A shared secret (between Coturn and Synapse) used for authentication.
 # You can put any string here, but generating a strong one is preferred (e.g. `pwgen -s 64 1`).
