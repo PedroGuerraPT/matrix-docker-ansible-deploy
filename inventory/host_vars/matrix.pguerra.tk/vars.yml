@@ -32,4 +32,4 @@ matrix_synapse_macaroon_secret_key: ''
 #
 # The playbook creates additional Postgres users and databases (one for each enabled service)
 # using this superuser account.
-matrix_postgres_connection_password: ''
+matrix_postgres_connection_password: 'Beeper!Covid.2020_Really'
