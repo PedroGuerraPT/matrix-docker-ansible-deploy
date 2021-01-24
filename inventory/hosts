@@ -15,4 +15,4 @@
 # You may sometimes need to explicitly add `ansible_python_interpreter=/usr/bin/python3` to lines below.
 
 [matrix_servers]
-tld_token ansible_host=ip_token ansible_ssh_user=root ansible_connection=local
+matrix.pguerra.tk ansible_host=beeper-elb-969155132.eu-west-1.elb.amazonaws.com ansible_ssh_user=root ansible_connection=local
