@@ -36,3 +36,6 @@ matrix_postgres_connection_password: 'Beeper!Covid.2020_Really'
 
 # We're going with ELB certs
 matrix_ssl_retrieval_method: none
+
+# Check https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-playbook-base-domain-serving.md
+matrix_nginx_proxy_base_domain_serving_enabled: true
