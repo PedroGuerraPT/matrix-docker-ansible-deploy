@@ -74,7 +74,7 @@ matrix_mautrix_facebook_enabled: true
 
 matrix_mautrix_whatsapp_enabled: true
 
-matrix_mx_puppet_skype_enabled: true
+matrix_mx_puppet_skype_enabled: false
 
 matrix_appservice_discord_enabled: false
 matrix_appservice_discord_client_id: "802905842872746014"
