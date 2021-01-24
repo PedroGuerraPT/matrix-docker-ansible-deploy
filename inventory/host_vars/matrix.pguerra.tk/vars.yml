@@ -37,8 +37,8 @@ matrix_postgres_connection_password: 'wENUktgw6T9HFWtKGSyLcMKfnGIjAnqT'
 # ARM64 instead of x86
 matrix_architecture: arm64
 
-# We're going with ELB certs
-matrix_ssl_retrieval_method: none
+# We're going with ELB certs, but self-signed certs still need to be created
+matrix_ssl_retrieval_method: self-signed
 
 # Check https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-playbook-base-domain-serving.md
 matrix_nginx_proxy_base_domain_serving_enabled: true
