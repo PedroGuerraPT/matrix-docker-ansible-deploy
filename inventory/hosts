@@ -15,4 +15,4 @@
 # You may sometimes need to explicitly add `ansible_python_interpreter=/usr/bin/python3` to lines below.
 
 [matrix_servers]
-{{ lookup('env', 'BEEPER_DNS') }} ansible_host={{ lookup('env', 'EXTERNAL_IP') }} ansible_ssh_user=root ansible_connection=local
+"{{ lookup('env', 'BEEPER_DNS') }}" ansible_host="{{ lookup('env', 'EXTERNAL_IP') }}" ansible_ssh_user=root ansible_connection=local
