@@ -34,6 +34,9 @@ matrix_synapse_macaroon_secret_key: 'OXVOjmpxWapgdTmQt3shl06s0yYFVxs5'
 # using this superuser account.
 matrix_postgres_connection_password: 'wENUktgw6T9HFWtKGSyLcMKfnGIjAnqT'
 
+# ARM64 instead of x86
+matrix_architecture: arm64
+
 # We're going with ELB certs
 matrix_ssl_retrieval_method: none
 
