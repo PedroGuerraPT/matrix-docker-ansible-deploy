@@ -47,7 +47,7 @@ matrix_synapse_configuration_extension_yaml: |
     complexity: 1.0 # this limits joining complex (~large) rooms, can be
                     # increased, but larger values can require more RAM
 
-matrix_dimension_enabled: true
+matrix_dimension_enabled: false
 
 matrix_dimension_admins:
   - "@user1:{{ matrix_domain }}"
