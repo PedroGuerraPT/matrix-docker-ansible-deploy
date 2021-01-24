@@ -8,7 +8,7 @@
 # because you can't change the Domain after deployment.
 #
 # Example value: example.com
-matrix_domain: pguerra.pt
+matrix_domain: 'pguerra.tk'
 
 # This is something which is provided to Let's Encrypt when retrieving SSL certificates for domains.
 #
