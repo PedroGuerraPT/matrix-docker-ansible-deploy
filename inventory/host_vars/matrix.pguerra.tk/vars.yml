@@ -33,3 +33,6 @@ matrix_synapse_macaroon_secret_key: 'Beeper!Covid.2020_Really'
 # The playbook creates additional Postgres users and databases (one for each enabled service)
 # using this superuser account.
 matrix_postgres_connection_password: 'Beeper!Covid.2020_Really'
+
+# We're going with ELB certs
+matrix_ssl_retrieval_method: none
