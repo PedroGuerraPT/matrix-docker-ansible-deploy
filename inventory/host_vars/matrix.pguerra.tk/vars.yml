@@ -53,6 +53,8 @@ matrix_dimension_admins:
   - "@user1:{{ matrix_domain }}"
   - "@user2:{{ matrix_domain }}"
 
+matrix_synapse_admin_enabled: true
+
 matrix_client_element_themes_enabled: true
 
 # Email settings
