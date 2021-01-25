@@ -18,7 +18,7 @@ matrix_domain: 'pguerra.tk'
 # you won't be required to define this variable (see `docs/configuring-playbook-ssl-certificates.md`).
 #
 # Example value: someone@example.com
-matrix_ssl_lets_encrypt_support_email: 'guerra.pt@hotmail.com'
+matrix_ssl_lets_encrypt_support_email: "{{ lookup('aws_secret', 'lets_encrypt_support_email') }}"
 
 # A shared secret (between Coturn and Synapse) used for authentication.
 # You can put any string here, but generating a strong one is preferred (e.g. `pwgen -s 64 1`).
@@ -39,13 +39,6 @@ matrix_architecture: arm64
 
 # Check https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-playbook-base-domain-serving.md
 matrix_nginx_proxy_base_domain_serving_enabled: true
-
-# Limit rooms because of limited RAM
-matrix_synapse_configuration_extension_yaml: |
-  limit_remote_rooms:
-    enabled: true
-    complexity: 1.0 # this limits joining complex (~large) rooms, can be
-                    # increased, but larger values can require more RAM
 
 matrix_dimension_enabled: false
 
