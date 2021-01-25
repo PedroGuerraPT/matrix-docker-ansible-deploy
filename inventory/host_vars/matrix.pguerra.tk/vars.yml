@@ -10,30 +10,6 @@
 # Example value: example.com
 matrix_domain: 'pguerra.tk'
 
-# Do not retrieve SSL certificates. This shall be managed by another webserver or other means.
-matrix_ssl_retrieval_method: none
-
-# Do not try to serve HTTPS, since we have no SSL certificates.
-# Disabling this also means services will be served on the HTTP port
-# (`matrix_nginx_proxy_container_http_host_bind_port`).
-matrix_nginx_proxy_https_enabled: false
-
-# Do not listen for HTTP on port 80 globally (default), listen on the loopback interface.
-# If you'd like, you can make it use the local network as well and reverse-proxy from another local machine.
-matrix_nginx_proxy_container_http_host_bind_port: '127.0.0.1:81'
-
-# Likewise, expose the Matrix Federation port on the loopback interface.
-# Since `matrix_nginx_proxy_https_enabled` is set to `false`, this federation port will serve HTTP traffic.
-# If you'd like, you can make it use the local network as well and reverse-proxy from another local machine.
-#
-# You'd most likely need to expose it publicly on port 8448 (8449 was chosen for the local port to prevent overlap).
-matrix_nginx_proxy_container_federation_host_bind_port: '127.0.0.1:8449'
-
-# Coturn relies on SSL certificates that have already been obtained.
-# Since we don't obtain any certificates (`matrix_ssl_retrieval_method: none` above), it won't work by default.
-# An alternative is to tweak some of: `matrix_coturn_tls_enabled`, `matrix_coturn_tls_cert_path` and `matrix_coturn_tls_key_path`.
-matrix_coturn_enabled: false
-
 # This is something which is provided to Let's Encrypt when retrieving SSL certificates for domains.
 #
 # In case SSL renewal fails at some point, you'll also get an email notification there.
