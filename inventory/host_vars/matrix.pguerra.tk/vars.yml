@@ -54,7 +54,7 @@ matrix_client_element_themes_enabled: true
 matrix_mailer_sender_address: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_sender_address', region='eu-west-1') }}"
 matrix_mailer_relay_use: true
 matrix_mailer_relay_host_name: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_relay_host_name', region='eu-west-1') }}"
-matrix_mailer_relay_host_port: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_relay_host_port', region='eu-west-1') }}"
+matrix_mailer_relay_host_port: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_relay_host_port', region='eu-west-1', decrypt=false) }}"
 matrix_mailer_relay_auth: true
 matrix_mailer_relay_auth_username: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_relay_auth_username', region='eu-west-1') }}"
 matrix_mailer_relay_auth_password: "{{ lookup('amazon.aws.aws_ssm', 'matrix_mailer_relay_auth_password', region='eu-west-1') }}"
